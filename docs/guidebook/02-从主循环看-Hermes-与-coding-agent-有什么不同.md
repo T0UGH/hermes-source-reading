@@ -55,7 +55,21 @@ status: draft
 
 按这个标准去看，三者的差异就很清楚了。
 
-![Hermes 与 coding agent 主循环差异图](./assets/hermes-vs-coding-agent-main-loop-diff.svg)
+```mermaid
+flowchart LR
+    subgraph A[普通 coding agent]
+        A1[用户输入] --> A2[推理 / 调工具]
+        A2 --> A3[输出结果]
+    end
+
+    subgraph B[Hermes]
+        B0[过去背景先进入当前轮]
+        B1[当前任务执行]
+        B2[输出结果]
+        B3[review / 沉淀 / 回流]
+        B0 --> B1 --> B2 --> B3
+    end
+```
 
 看这张图时，建议按这个顺序读：
 

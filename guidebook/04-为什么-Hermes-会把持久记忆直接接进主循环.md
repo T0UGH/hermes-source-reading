@@ -35,6 +35,14 @@ Hermes 走的不是这条路。
 
 > **Hermes 要的是“持续积累”，但不愿意为了实时刷新记忆而破坏当前会话稳定性；`MEMORY.md / USER.md + frozen snapshot` 正是在解决这个矛盾。**
 
+```mermaid
+flowchart TD
+    A[MEMORY.md / USER.md] --> B[frozen snapshot]
+    B --> C[system prompt 背景层]
+    C --> D[当前回合起点被改写]
+    D --> E[主循环执行]
+```
+
 ---
 
 ## 一、Hermes 先回答的不是“怎么查记忆”，而是“什么必须每轮都带着”
