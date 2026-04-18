@@ -94,7 +94,6 @@ Expected: plan file committed cleanly.
 
 Insert this block near the front of both source and docs mirror articles:
 
-```markdown
 ```mermaid
 flowchart TD
     A[当前轮对话持续发生] --> B[state.db / transcript 持续写入]
@@ -107,13 +106,11 @@ flowchart TD
 
     C -. 为未来召回准备材料 .-> E
 ```
-```
 
 - [ ] **Step 2: 在第 06 篇插入 skill 升级路径 Mermaid 图**
 
 Insert this block near the front third of both source and docs mirror articles:
 
-```markdown
 ```mermaid
 flowchart LR
     A[当前任务做通一次] --> B[识别出可复用做法]
@@ -123,13 +120,11 @@ flowchart LR
     E --> F[后续任务再次命中 skill]
     F --> G[偶然成功变成可重复成功]
 ```
-```
 
 - [ ] **Step 3: 在第 08 篇插入 background review 分流 Mermaid 图**
 
 Insert this block near the first third of both source and docs mirror articles:
 
-```markdown
 ```mermaid
 flowchart TD
     A[主循环完成当前任务] --> B[background review 重新审视本轮]
@@ -141,7 +136,6 @@ flowchart TD
     D --> H[下轮背景层]
     E --> I[未来 procedural memory]
     F --> J[未来按需 recall]
-```
 ```
 
 - [ ] **Step 4: 同步 05 / 06 / 08 到 docs 镜像**
@@ -211,7 +205,7 @@ Diagram must read as a loop, not a flat module catalog.
 
 Insert this block in both source and docs mirror articles:
 
-```markdown
+```text
 ![Hermes self-evolution loop 总装图](./assets/hermes-article-09-self-evolution-loop-map.svg)
 ```
 
@@ -250,7 +244,6 @@ Expected: text refinement and total-loop figure committed together.
 
 - [ ] **Step 1: 在第 02 篇插入 Hermes vs coding agent 对照 Mermaid 图**
 
-```markdown
 ```mermaid
 flowchart LR
     subgraph A[普通 coding agent]
@@ -266,11 +259,9 @@ flowchart LR
         B0 --> B1 --> B2 --> B3
     end
 ```
-```
 
 - [ ] **Step 2: 在第 04 篇插入持久记忆进入主循环 Mermaid 图**
 
-```markdown
 ```mermaid
 flowchart TD
     A[MEMORY.md / USER.md] --> B[frozen snapshot]
@@ -278,11 +269,9 @@ flowchart TD
     C --> D[当前回合起点被改写]
     D --> E[主循环执行]
 ```
-```
 
 - [ ] **Step 3: 在第 07 篇插入普通压缩 vs Hermes 整理 Mermaid 对照图**
 
-```markdown
 ```mermaid
 flowchart LR
     subgraph A[普通上下文压缩]
@@ -294,7 +283,6 @@ flowchart LR
         B1[历史太长] --> B2[压缩并保留工作结构]
         B2 --> B3[未来还能继续工作]
     end
-```
 ```
 
 - [ ] **Step 4: 同步 02 / 04 / 07 到 docs 镜像**
@@ -359,11 +347,11 @@ The visual emphasis should be “不同材料，不同用途”，not a flat fil
 
 Insert these blocks in source and docs mirror files:
 
-```markdown
+```text
 ![Hermes 自我进化闭环总图](./assets/hermes-article-01-self-evolution-loop.svg)
 ```
 
-```markdown
+```text
 ![Hermes 静态材料层分层图](./assets/hermes-article-03-static-material-layers.svg)
 ```
 
