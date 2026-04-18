@@ -37,6 +37,19 @@ status: draft
 
 > **Hermes 的主循环在用户看到结果时还没有真正结束。真正把“这一轮完成了什么”转成“以后还能继续用什么”的关键转折，不在最终回答本身，而在响应之后的 background review。**
 
+```mermaid
+flowchart TD
+    A[主循环完成当前任务] --> B[background review 重新审视本轮]
+    B --> C{这轮留下了什么?}
+    C -->|稳定事实| D[memory]
+    C -->|可复用方法| E[skill]
+    C -->|只保留会话材料| F[session history]
+    C -->|没什么值得留| G[Nothing to save]
+    D --> H[下轮背景层]
+    E --> I[未来 procedural memory]
+    F --> J[未来按需 recall]
+```
+
 ---
 
 ## 一、普通 agent 的“结束”，在 Hermes 这里只是第一层结束
