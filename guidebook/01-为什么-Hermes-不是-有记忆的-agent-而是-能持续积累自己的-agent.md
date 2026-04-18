@@ -46,9 +46,9 @@ Hermes 更像这样一套系统：
 
 ## 一、先看最小总图：Hermes 的变强，不是一条线，而是四条闭环
 
-如果把 Hermes 里最像“持续变强”的部分压成最低分辨率模型，可以先看这四条线：
+如果把 Hermes 里最像“持续变强”的部分压成最低分辨率模型，可以先看这张总图，再去拆后面的四条线：
 
-![Hermes 自我进化闭环总图](./assets/hermes-self-evolution-closed-loop.svg)
+![Hermes 自我进化闭环总图](./assets/hermes-article-01-self-evolution-loop.svg)
 
 看这张图时，建议按这个顺序读：
 

@@ -79,7 +79,9 @@ status: draft
 4. **经验轨迹层**：trajectory JSONL
 5. **运行策略层**：`config.yaml`
 
-这五层分别回答不同问题。
+这五层分别回答不同问题：
+
+![Hermes 静态材料层分层图](./assets/hermes-article-03-static-material-layers.svg)
 
 ### 1. `MEMORY.md` / `USER.md`：以后还要继续记住什么
 

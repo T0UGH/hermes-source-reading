@@ -1,0 +1,97 @@
+<svg width="1400" height="960" viewBox="0 0 1400 960" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Hermes 静态材料层分层图</title>
+  <desc id="desc">A layered diagram showing different Hermes static material types with different purposes: user preferences, environment facts, session history, skills, and trajectory/compression materials, all feeding different future uses.</desc>
+  <defs>
+    <linearGradient id="bg" x1="100" y1="60" x2="1300" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EEF5FF"/>
+    </linearGradient>
+    <linearGradient id="top1" x1="180" y1="160" x2="940" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE8E7"/>
+      <stop offset="1" stop-color="#F9D0CD"/>
+    </linearGradient>
+    <linearGradient id="top2" x1="180" y1="275" x2="940" y2="365" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDEBFF"/>
+      <stop offset="1" stop-color="#C7DAFF"/>
+    </linearGradient>
+    <linearGradient id="mid1" x1="180" y1="390" x2="940" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDF7ED"/>
+      <stop offset="1" stop-color="#C6EEDB"/>
+    </linearGradient>
+    <linearGradient id="mid2" x1="180" y1="505" x2="940" y2="595" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ECE3FF"/>
+      <stop offset="1" stop-color="#D8CCFF"/>
+    </linearGradient>
+    <linearGradient id="bottom" x1="180" y1="620" x2="940" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E3F3FF"/>
+      <stop offset="1" stop-color="#CFE8FF"/>
+    </linearGradient>
+    <linearGradient id="purpose" x1="980" y1="170" x2="1240" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4D7"/>
+      <stop offset="1" stop-color="#FFE3AA"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10V0Z" fill="#375A7F"/>
+    </marker>
+    <filter id="shadow" x="0" y="0" width="1400" height="960" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#94A3B8" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .panel { stroke:#335C85; stroke-width:2.4; rx:24; filter:url(#shadow); }
+      .title { font:700 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; fill:#16324F; }
+      .subtitle { font:500 19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; fill:#35516D; }
+      .label { font:700 23px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; fill:#17324D; }
+      .body { font:500 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; fill:#27435D; }
+      .small { font:600 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; fill:#3E5B78; }
+      .arrow { fill:none; stroke:#3D5A80; stroke-width:4.5; marker-end:url(#arrow); stroke-linecap:round; }
+      .divider { stroke:#98AEC8; stroke-width:2; stroke-dasharray:8 8; }
+    </style>
+  </defs>
+
+  <rect x="40" y="40" width="1320" height="880" rx="36" fill="url(#bg)" stroke="#C7D6EA" stroke-width="2"/>
+  <text x="700" y="94" text-anchor="middle" class="title">Hermes 静态材料层分层图</text>
+  <text x="700" y="127" text-anchor="middle" class="subtitle">重点不是“磁盘里有很多文件”，而是不同材料承担不同用途，合起来支撑长期积累</text>
+
+  <rect x="150" y="160" width="800" height="92" class="panel" fill="url(#top1)"/>
+  <text x="195" y="200" class="label">用户稳定偏好</text>
+  <text x="195" y="230" class="body">USER.md：沟通风格、偏好、习惯、长期期待</text>
+
+  <rect x="150" y="275" width="800" height="92" class="panel" fill="url(#top2)"/>
+  <text x="195" y="315" class="label">环境 / 项目稳定事实</text>
+  <text x="195" y="345" class="body">MEMORY.md：环境知识、项目约定、tool quirks、长期背景</text>
+
+  <rect x="150" y="390" width="800" height="92" class="panel" fill="url(#mid1)"/>
+  <text x="195" y="430" class="label">session 历史</text>
+  <text x="195" y="460" class="body">state.db：完整消息、metadata、可搜索的过去会话材料</text>
+
+  <rect x="150" y="505" width="800" height="92" class="panel" fill="url(#mid2)"/>
+  <text x="195" y="545" class="label">skills</text>
+  <text x="195" y="575" class="body">~/.hermes/skills/：把做法写成 procedural memory，而不是只留事实</text>
+
+  <rect x="150" y="620" width="800" height="92" class="panel" fill="url(#bottom)"/>
+  <text x="195" y="660" class="label">trajectory / compression 相关材料</text>
+  <text x="195" y="690" class="body">trajectory JSONL、压缩后历史、缓存与配置：保留过程形状，维持长期运行能力</text>
+
+  <line x1="150" y1="264" x2="950" y2="264" class="divider"/>
+  <line x1="150" y1="379" x2="950" y2="379" class="divider"/>
+  <line x1="150" y1="494" x2="950" y2="494" class="divider"/>
+  <line x1="150" y1="609" x2="950" y2="609" class="divider"/>
+
+  <rect x="1000" y="170" width="250" height="560" class="panel" fill="url(#purpose)"/>
+  <text x="1125" y="215" text-anchor="middle" class="label">未来用途分流</text>
+  <text x="1125" y="260" text-anchor="middle" class="body">下轮默认背景</text>
+  <text x="1125" y="360" text-anchor="middle" class="body">按需 recall</text>
+  <text x="1125" y="460" text-anchor="middle" class="body">直接复用方法</text>
+  <text x="1125" y="560" text-anchor="middle" class="body">分析 / 训练 / 继续压缩</text>
+  <text x="1125" y="660" text-anchor="middle" class="small">不是一份平面文件清单，</text>
+  <text x="1125" y="688" text-anchor="middle" class="small">而是一套按用途分工的材料层</text>
+
+  <path class="arrow" d="M950 205 C995 205 995 250 1040 250"/>
+  <path class="arrow" d="M950 320 C1020 320 1030 350 1040 350"/>
+  <path class="arrow" d="M950 435 C1020 435 1030 450 1040 450"/>
+  <path class="arrow" d="M950 550 C1020 550 1030 550 1040 550"/>
+  <path class="arrow" d="M950 665 C1020 665 1030 650 1040 650"/>
+
+  <text x="150" y="785" class="subtitle">读法：先区分“材料类型”，再看它们分别服务于背景注入、经验召回、方法复用和历史整理</text>
+  <text x="150" y="825" class="small">因此，Hermes 的静态层不是把所有东西堆进磁盘，而是提前为不同形式的长期经验准备不同落点。</text>
+</svg>
