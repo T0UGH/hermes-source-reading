@@ -1,30 +1,34 @@
 ---
-title: Hermes 源码导读
+title: Hermes 源码导读手册
 date: 2026-04-18
 ---
 
-# Hermes 源码导读
+# Hermes 源码导读手册
 
 > 一套围绕 **Hermes 怎样把经验沉淀成长期能力** 重新组织的中文源码导读手册。
 
-这里是公开站点首页。当前这套导读不先按“通用 agent 分层”展开，而是直接从 Hermes 最值得学的主线切入：
+这个首页现在只做三件事：
+
+- 告诉你这是什么项目
+- 告诉你正式阅读入口在哪里
+- 告诉你如果想顺着主线读，应该怎么进入
+
+当前站点主入口已经切到 **Hermes 自我进化 guidebook**。这套导读不再先按“通用 agent 分层”展开，而是直接围绕 Hermes 最值得学的主线组织：
 
 - 持久记忆怎样被稳定注入
 - 会话回忆怎样把过去重构成当前可用经验
-- skill system 怎样把做法沉淀成 procedural memory
+- skill system 怎样把成功做法沉淀成 procedural memory
 - compression / caching / background review 怎样让系统在长期运行里继续变轻、变稳、变可复用
 
-## 从哪里开始
+## 正式阅读入口
 
-### 第一次进入这个项目
-建议直接从这里开始：
+如果你是第一次进入，直接从这里开始：
 
 - [开始阅读｜Hermes 自我进化 guidebook](./guidebook/README.md)
 - [Hermes 自我进化阅读路线图](./guidebook/2026-04-16-Hermes-自我进化阅读路线图-v1.md)
 - [01 为什么 Hermes 不是“有记忆的 agent”，而是“能持续积累自己的 agent”](./guidebook/01-为什么-Hermes-不是-有记忆的-agent-而是-能持续积累自己的-agent.md)
 
-### 如果你想直接顺着正文读
-可以直接按 01–09 的顺序进入：
+如果你已经知道自己要顺着整套结构读，可以直接按 01–09 顺序进入：
 
 1. [01 为什么 Hermes 不是“有记忆的 agent”，而是“能持续积累自己的 agent”](./guidebook/01-为什么-Hermes-不是-有记忆的-agent-而是-能持续积累自己的-agent.md)
 2. [02 从主循环看，Hermes 与 coding agent 有什么不同](./guidebook/02-从主循环看-Hermes-与-coding-agent-有什么不同.md)
@@ -36,23 +40,20 @@ date: 2026-04-18
 8. [08 为什么 Hermes 的主循环收口后还没结束：background review 才是经验沉淀的关键转折](./guidebook/08-为什么-Hermes-的主循环收口后还没结束-background-review-才是经验沉淀的关键转折.md)
 9. [09 Hermes 怎样把 memory、recall、skills、compression 接成真正的 self-evolution loop](./guidebook/09-Hermes-怎样把-memory-recall-skills-compression-接成真正的-self-evolution-loop.md)
 
-## 这套导读在回答什么
+## 这套手册到底在讲什么
 
-这套导读不是带你“逛 Hermes 代码目录”，而是在回答一串更关键的问题：
+这套手册不是带你“逛源码目录”，而是在回答一串更关键的问题：
 
 - Hermes 为什么不是普通“带工具的 agent”
 - `MEMORY.md / USER.md` 和 frozen snapshot 为什么是长期记忆设计的核心
 - `state.db + session_search` 为什么不是聊天记录搜索，而是过去经验的按需重构层
 - skill system 为什么比“多一个记忆文件”更接近真正的自我进化
 - compression / caching / background review 为什么不是附属优化，而是经验系统继续可工作的条件
+- 这些能力最后又怎样重新接回 `run_agent.py` 的主体循环，形成真正的 self-evolution loop
 
-## 当前入口说明
+## 如果你要继续下钻
 
 - `guidebook/README.md` 是当前正式阅读入口
-- `guidebook/2026-04-16-Hermes-自我进化阅读路线图-v1.md` 是主阅读坡度说明
-- `guidebook/2026-04-17-Hermes-特色与不同点系列规划-v1.md` 是结构解释层，不进入主导航
-- `guidebook/README-writing-cards-v1.md` 是写作底稿层，不进入主导航
-
-## 一句话理解这本书
-
-> 这不是一份泛化的 Agent 架构八股，而是围绕 Hermes 最值得学习的部分展开：它怎样通过记忆、会话回忆、技能沉淀与上下文自压缩，让自己在长期运行中持续变强。
+- `2026-04-16-Hermes-自我进化阅读路线图-v1.md` 是阅读坡度说明
+- `2026-04-17-Hermes-特色与不同点系列规划-v1.md` 与 `README-writing-cards-v1.md` 更偏控制层 / 底稿层，不进入主导航
+- 如果你想先看整套入口，再进入正文，请直接从 [开始阅读｜Hermes 自我进化 guidebook](./guidebook/README.md) 开始

@@ -1,5 +1,5 @@
 site_name: Hermes 源码导读
-site_description: A public-facing source guide for understanding Hermes internals
+site_description: 一套围绕 Hermes 怎样把经验沉淀成长期能力重新组织的中文源码导读手册
 site_url: https://t0ugh.github.io/hermes-source-reading/
 repo_url: https://github.com/T0UGH/hermes-source-reading
 repo_name: T0UGH/hermes-source-reading
