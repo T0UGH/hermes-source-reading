@@ -33,18 +33,9 @@ Hermes 两条都没选。
 
 > **Hermes 不只会“记住事实”，它还会在需要时把过去会话重构成当前真正需要的经验；session recall 解决的是情境回忆，不是固定记忆。**
 
-```mermaid
-flowchart TD
-    A[当前轮对话持续发生] --> B[state.db / transcript 持续写入]
-    B --> C[形成可检索的 session substrate]
+![session recall 按需重构过去经验](./assets/hermes-article-05-imagegen2-session-recall-reconstruction.png)
 
-    D[当前 query 触发跨 session 问题] --> E[session_search]
-    E --> F[FTS5 命中过去会话]
-    F --> G[聚合 / 去重 / focused summary]
-    G --> H[当前轮得到可用的过去经验]
-
-    C -. 为未来召回准备材料 .-> E
-```
+*图：这张图说明 session recall 的价值不在于回放聊天记录，而在于把 state.db、FTS5 检索和 focused summary 接成一条重构链，把过去变成当前可用的经验。*
 
 ---
 

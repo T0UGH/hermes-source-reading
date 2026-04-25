@@ -27,7 +27,9 @@ status: draft
 
 > **Hermes 的特点不在模块多，而在于它让事实、旧经验、做法和历史整理持续回流到下一轮。memory 把稳定事实带回背景层，recall 把相关旧会话拉回当前场景，skills 把成功做法变成以后可直接调用的能力，compression 让越来越长的历史还能继续工作，background review 则负责判断这轮里什么值得进入未来。**
 
-![Hermes self-evolution loop 总装图](./assets/hermes-article-09-self-evolution-loop-map.svg)
+![Hermes self-evolution loop 总收束](./assets/hermes-article-09-imagegen2-self-evolution-system-loop.png)
+
+*图：这张图把全书拆开的机制重新接成一条系统级闭环：带着过去进入当前回合，执行中制造新经验，回答后通过 review、memory、recall、skills 与 compression 回流成未来能力。*
 
 后面不再重复介绍模块本身，而是顺着这条回流链，看它们各自卡在什么位置。
 

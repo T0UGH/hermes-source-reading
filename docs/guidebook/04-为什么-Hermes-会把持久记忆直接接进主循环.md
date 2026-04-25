@@ -35,13 +35,9 @@ Hermes 走的不是这条路。
 
 > **Hermes 要的是“持续积累”，但不愿意为了实时刷新记忆而破坏当前会话稳定性；`MEMORY.md / USER.md + frozen snapshot` 正是在解决这个矛盾。**
 
-```mermaid
-flowchart TD
-    A[MEMORY.md / USER.md] --> B[frozen snapshot]
-    B --> C[system prompt 背景层]
-    C --> D[当前回合起点被改写]
-    D --> E[主循环执行]
-```
+![持久记忆进入主循环](./assets/hermes-article-04-imagegen2-persistent-memory-in-main-loop.png)
+
+*图：这张图展示持久记忆为什么要作为系统提示的一部分稳定注入：它不是临时查询结果，而是每轮运行都要踩住的用户事实、环境事实和长期约定。*
 
 ---
 

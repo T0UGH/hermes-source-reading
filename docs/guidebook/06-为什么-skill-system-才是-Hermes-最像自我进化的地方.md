@@ -51,15 +51,9 @@ session recall 回答的是：
 
 > **很多 agent 只会积累事实；Hermes 更进一步，把“怎么做”也沉淀成 procedural memory，而 skill system 正是这套能力的正式入口。**
 
-```mermaid
-flowchart LR
-    A[当前任务做通一次] --> B[识别出可复用做法]
-    B --> C[review / 判断值得沉淀]
-    C --> D[skill_manage create / patch]
-    D --> E[skill 写入技能目录]
-    E --> F[后续任务再次命中 skill]
-    F --> G[偶然成功变成可重复成功]
-```
+![skill system 作为程序化记忆](./assets/hermes-article-06-imagegen2-skill-system-procedural-memory.png)
+
+*图：这张图把 skill system 画成一种可演化的操作资产：经验不只被记成事实，还可以被整理成带说明、模板、脚本、资产和校验边界的 procedural memory。*
 
 ---
 

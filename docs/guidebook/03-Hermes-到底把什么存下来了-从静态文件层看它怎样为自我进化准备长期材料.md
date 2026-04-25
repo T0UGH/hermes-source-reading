@@ -81,7 +81,9 @@ status: draft
 
 这五层分别回答不同问题：
 
-![Hermes 静态材料层分层图](./assets/hermes-article-03-static-material-layers.svg)
+![Hermes 静态材料层](./assets/hermes-article-03-imagegen2-static-material-layers.png)
+
+*图：这张图把 Hermes 真正落盘的长期材料分成几层：长期事实、会话检索底座、程序化做法、运行轨迹和配置策略。它们不是一类“历史”，而是支撑自我进化的不同材料。*
 
 ### 1. `MEMORY.md` / `USER.md`：以后还要继续记住什么
 

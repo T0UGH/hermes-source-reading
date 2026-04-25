@@ -37,18 +37,9 @@ status: draft
 
 > **Hermes 的主循环在用户看到结果时还没有真正结束。真正把“这一轮完成了什么”转成“以后还能继续用什么”的关键转折，不在最终回答本身，而在响应之后的 background review。**
 
-```mermaid
-flowchart TD
-    A[主循环完成当前任务] --> B[background review 重新审视本轮]
-    B --> C{这轮留下了什么?}
-    C -->|稳定事实| D[memory]
-    C -->|可复用方法| E[skill]
-    C -->|只保留会话材料| F[session history]
-    C -->|没什么值得留| G[Nothing to save]
-    D --> H[下轮背景层]
-    E --> I[未来 procedural memory]
-    F --> J[未来按需 recall]
-```
+![background review 把结果变成积累](./assets/hermes-article-08-imagegen2-background-review-experience-settling.png)
+
+*图：这张图展示用户可见回答之后的第二层收口：Hermes 会在后台 fork 反思流程，判断哪些事实和做法值得沉淀，并把它们写回 memory 或 skills。*
 
 ---
 

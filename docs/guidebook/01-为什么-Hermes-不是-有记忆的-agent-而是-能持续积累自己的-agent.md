@@ -48,7 +48,9 @@ Hermes 更像这样一套系统：
 
 如果把 Hermes 里最像“持续变强”的部分压成最低分辨率模型，可以先看这张总图，再去拆后面的四条线：
 
-![Hermes 自我进化闭环总图](./assets/hermes-article-01-self-evolution-loop.svg)
+![Hermes 自我进化闭环总图](./assets/hermes-article-01-imagegen2-self-evolution-loop.png)
+
+*图：这张图把 Hermes 和普通“有记忆 agent”的差别压成一条闭环：memory 提供稳定地板，session recall 重构过去经验，skills 沉淀可复用做法，compression / caching 整理长期历史，background review 则把交付后的经验继续写回未来。*
 
 看这张图时，建议按这个顺序读：
 

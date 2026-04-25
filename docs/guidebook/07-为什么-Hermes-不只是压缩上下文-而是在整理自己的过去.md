@@ -34,18 +34,9 @@ status: draft
 
 > **Hermes 不只是压缩上下文，而是在整理自己的过去：保住该保住的头尾，压缩中段历史，持续更新总结，并配合 prompt caching，把长会话中的经验重新整理成还能继续运行的形状。**
 
-```mermaid
-flowchart LR
-    subgraph A[普通上下文压缩]
-        A1[历史太长] --> A2[删减 / 摘短]
-        A2 --> A3[降低 token 压力]
-    end
+![compression 不是截断，而是整理过去](./assets/hermes-article-07-imagegen2-compression-past-organization.png)
 
-    subgraph B[Hermes 式过去整理]
-        B1[历史太长] --> B2[压缩并保留工作结构]
-        B2 --> B3[未来还能继续工作]
-    end
-```
+*图：这张图强调 Hermes 的 compression / caching 不是简单省 token，而是把 head、tail、工具输出和中段历史重新组织成下一轮还能继续工作的过去。*
 
 ---
 

@@ -55,21 +55,9 @@ status: draft
 
 按这个标准去看，三者的差异就很清楚了。
 
-```mermaid
-flowchart LR
-    subgraph A[普通 coding agent]
-        A1[用户输入] --> A2[推理 / 调工具]
-        A2 --> A3[输出结果]
-    end
+![Hermes 与 coding agent 主循环差异](./assets/hermes-article-02-imagegen2-main-loop-difference.png)
 
-    subgraph B[Hermes]
-        B0[过去背景先进入当前轮]
-        B1[当前任务执行]
-        B2[输出结果]
-        B3[review / 沉淀 / 回流]
-        B0 --> B1 --> B2 --> B3
-    end
-```
+*图：这张图强调 Hermes 的主循环不只是在完成当前任务，而是在回答之后继续处理经验：保存事实、召回过去、沉淀 skill、整理上下文，并把这些结果带回下一轮。*
 
 看这张图时，建议按这个顺序读：
 
